@@ -1,4 +1,4 @@
-@import url(fields/index.css);
+@import url(./fields/index.css);
 
 body {
   background-color: var(--shape-bg);
