@@ -11,10 +11,4 @@ Esse é um projeto feito para a Tasse - Consultoria em tributos, uma landing pag
 
 ## Preview
 
-![Imagem do WhatsApp de 2024-12-05 à(s) 17 31 54_8d3aadf9](https://github.com/user-attachments/assets/2f46bb07-c8ee-4649-95dd-aca8912221b9)
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/0b4d34b7-0205-4196-9668-a730ead7aff3)
