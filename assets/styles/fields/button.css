@@ -1,0 +1,21 @@
+button{
+    all: unset;
+
+    margin-top: 3.2rem;
+    padding: 1.2rem 1.6rem;
+    border: 2px solid transparent;
+    outline: 1px solid var(--input-stroke);
+    background-color: var(--input-bg);
+    text-align: center;
+    font: var(--body-md-semibold);
+
+    background-color: var(--brand-dark);
+    color: var(--text-body);
+    border-radius: .8rem;
+
+    &:hover{
+        background-color: var(--brand-mid);
+        color: white;
+        transition: 0.3s;
+    }
+}

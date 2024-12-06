@@ -1,0 +1,70 @@
+/* Toggle Options */
+.toggle-options {
+  width: 100%;
+  border-radius: 0.8rem;
+
+  border: 2px solid transparent;
+  outline: 1px solid var(--input-stroke);
+  background-color: var(--input-bg);
+
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+
+  }
+
+  & > .toggle-content {
+    display: flex;
+    width: 50%;
+    position: relative;
+    padding: 1.2rem 1.6rem;
+    border-radius: 0.8rem;
+    align-items: center;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    padding-right: 4.5rem;
+
+    & .type-image {
+      background-repeat: no-repeat;
+      width: 20%;
+      height: 100%;
+    }
+
+    & label {
+      color: var(--text-body);
+      font: var(--body-md-regular);
+    }
+
+    &:has(:checked) {
+      background-color: var(--shape-btn);
+    }
+  }
+
+  & #CondSim-container {
+    > .type-image {
+      background-image: url(../../icons/check.svg);
+      background-size: 2rem 2rem;
+      background-position: center;
+    }
+
+    &:has(:checked) > .type-image {
+      background-image: url(../../icons/check-azul.svg);
+    }
+  }
+
+  & #CondNao-container {
+    > .type-image {
+      background-image: url(../../icons/no.svg);
+      background-size: 2rem 2rem;
+      background-position: center;
+    }
+
+    &:has(:checked) > .type-image {
+      background-image: url(../../icons/no-blue.svg);
+    }
+  }
+}

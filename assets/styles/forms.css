@@ -1,0 +1,27 @@
+form {
+  margin-top: 4rem;
+  width: 66rem;
+}
+
+fieldset {
+  border: none;
+  align-items: center;
+}
+
+legend > img{
+  width: 2.4rem;
+}
+
+.client-info {
+  legend {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 2.4rem;
+
+    p {
+      font: var(--heading-sm);
+      color: var(--text-head);
+    }
+  }
+}

@@ -1,0 +1,83 @@
+input,
+textarea,
+select {
+  appearance: none;
+  width: 100%;
+  border-radius: 0.8rem;
+
+  border: 2px solid transparent;
+  outline: 1px solid var(--input-stroke);
+  background-color: var(--input-bg);
+
+  padding: 1.2rem 1.6rem;
+
+  &:focus,
+  &:focus-within {
+    border: 2px solid transparent;
+    outline: 1px solid var(--brand-light);
+  }
+
+  &[required] + .error {
+    display: flex;
+
+    align-items: center;
+    gap: 0.4rem;
+    font: var(--body-xs-semibold);
+    color: var(--danger);
+
+    margin-top: 0.4rem;
+  }
+
+  &:not(:focus) + .error,
+  &:valid + .error {
+    display: none;
+    border: 0.2rem solid var(--stroke-highlight);
+  }
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 1.6rem;
+
+  & label {
+    font: var(--body-sm-regular);
+    color: var(--text-body);
+  }
+
+  & input[type="text"] {
+    font: var(--body-md-regular);
+    color: var(--text-head);
+    &::placeholder {
+      color: var(--input-placeholder);
+      font: var(--body-sm-regular);
+    }
+  }
+
+  & input[type="tel"] {
+    font: var(--body-md-regular);
+    color: var(--text-head);
+    &::placeholder {
+      color: var(--input-placeholder);
+    }
+  }
+
+  & input[type="email"] {
+    font: var(--body-md-regular);
+    color: var(--text-head);
+    &::placeholder {
+      color: var(--input-placeholder);
+    }
+  }
+
+  & textarea{
+    font: var(--body-md-regular);
+    color: var(--text-head);
+    resize: none;;
+    &::placeholder {
+      color: var(--input-placeholder);
+    }
+  }
+}
+
