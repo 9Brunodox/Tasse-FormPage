@@ -8,9 +8,9 @@
       overflow: hidden;
       gap: 2rem;
     }
-  }
+}
   
-  @media (max-width: 1270px) {
+@media (max-width: 1270px) {
     #App {
       display: flex;
       flex-direction: column;
@@ -26,9 +26,9 @@
         display: none;
       }
     }
-  }
+}
   
-  @media (max-width: 1024px) {
+@media (max-width: 1024px) {
     #App {
       display: flex;
       flex-direction: column;
@@ -44,9 +44,9 @@
         display: none;
       }
     }
-  }
+}
   
-  @media (max-width: 770px) {
+@media (max-width: 770px) {
     .flex {
       display: flex;
       flex-direction: column;
@@ -58,6 +58,47 @@
     .flex-2 {
       flex: none;
     }
+
+    aside {
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        & header {
+          img {
+            width: 14rem;
+          }
+        }
+        & .aside-text {
+          flex-direction: column;
+          gap: 0.4rem;
+    
+          & h1 {
+            font: var(--logo2);
+            font-size: 3.2rem;
+            color: var(--text-head);
+            text-align: start;
+          }
+
+          & h2{
+            font: var(--body-md-semibold);
+            font-size: 2rem;
+            text-align: start;
+            color: var(--text-head);
+          }
+    
+          & p {
+            font: var(--body-md-regular);
+            text-align: start;
+            color: var(--text-head);
+            font-weight: 300;
+            text-align: justify;
+          }
+    
+          & strong {
+            text-decoration: underline;
+          }
+        }
+      }
     main {
       &.main-container {
         width: 100vw;
@@ -129,9 +170,9 @@
       background-color: var(--shape-btn);
       border: 2px solid var(--brand-light);
     }
-  }
+}
   
-  @media (max-width: 700px) {
+@media (max-width: 700px) {
     #App {
       display: flex;
       flex-direction: column;
@@ -156,9 +197,16 @@
   
         & h1 {
           font: var(--logo2);
-          font-size: 3rem;
+          font-size: 2.4rem;
           color: var(--text-head);
         }
+
+        & h2{
+            font: var(--body-md-semibold);
+            font-size: 1.6rem;
+            text-align: justify;
+            color: var(--text-head);
+          }
   
         & p {
           font: var(--body-md-regular);
@@ -176,9 +224,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-    .aside-text {
-      text-align: center;
     }
     .aside-image img {
       width: 100%;
@@ -301,198 +346,7 @@
       font-size: 1.4rem;
       text-align: center;
     }
-  }
-  
-  @media (max-width: 500px) {
-    #App {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 0.5rem;
-      gap: 0.8rem;
-      overflow: hidden;
-    }
-  
-    aside {
-      width: 100%;
-      padding: 0.8rem;
-      margin-bottom: 1rem;
-  
-      & header img {
-        width: 12rem;
-      }
-  
-      & .aside-text {
-        flex-direction: column;
-        gap: 0.3rem;
-  
-        & h1 {
-          font: var(--logo2);
-          font-size: 2.4rem;
-          color: var(--text-head);
-        }
-  
-        & p {
-          font: var(--body-md-regular);
-          text-align: center; /* Centraliza para telas menores */
-          color: var(--text-head);
-          font-weight: 300;
-          text-align: justify;
-        }
-  
-        & strong {
-          text-decoration: underline;
-        }
-      }
-    }
-  
-    .aside-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .aside-text {
-      text-align: center;
-    }
-  
-    .aside-image img {
-      width: 100%;
-      height: auto;
-      border-radius: 0.8rem;
-    }
-  
-    main {
-      width: 100%;
-      padding: 0.8rem;
-    }
-  
-    .main-container {
-      width: 100%;
-      padding: 0.8rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .header {
-      width: 100%;
-      text-align: center;
-      margin: 0 auto;
-      margin-bottom: 0.8rem;
-    }
-  
-    form {
-      width: 100%;
-      max-width: 40rem; /* Reduz a largura máxima */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    fieldset {
-      width: 100%;
-      border: none;
-      padding: 0;
-    }
-  
-    legend {
-      text-align: center; /* Centraliza legendas */
-    }
-  
-    .flex {
-      flex-direction: column;
-      gap: 1rem;
-      width: 100%;
-      align-items: center;
-    }
-  
-    .flex-1 {
-      width: 100%;
-      max-width: 100%;
-    }
-  
-    .input-wrapper {
-      width: 100%;
-      max-width: 100%; /* Inputs ocupam toda a largura */
-      margin-bottom: 1rem;
-    }
-  
-    input,
-    textarea {
-      width: 100%;
-      font-size: 1.2rem; /* Tamanho reduzido para telas menores */
-      box-sizing: border-box;
-      padding: 0.8rem;
-    }
-  
-    /* Botões de Rádio */
-    .toggle-options {
-      display: flex;
-      flex-direction: row;
-      gap: 0.8rem;
-      width: 100%;
-      align-items: stretch; /* Botões ocupam toda a largura */
-    }
-  
-    .toggle-content {
-      flex: none; /* Remove flex para controlar largura manualmente */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 0.8rem;
-      border-radius: 0.8rem;
-      width: 100%;
-    }
-  
-    .type-image {
-      width: 1.6rem; /* Tamanho menor para ícones */
-      height: 1.6rem;
-      margin-right: 0.5rem;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-  
-    #CondSim-container {
-      > .type-image {
-        background-image: url(../../icons/check.svg);
-        background-size: 1.6rem 1.6rem;
-        background-position: center;
-      }
-  
-      &:has(:checked) > .type-image {
-        background-image: url(../../icons/check-azul.svg);
-      }
-    }
-  
-    #CondNao-container {
-      > .type-image {
-        background-image: url(../../icons/no.svg);
-        background-size: 1.6rem 1.6rem;
-        background-position: center;
-      }
-  
-      &:has(:checked) > .type-image {
-        background-image: url(../../icons/no-blue.svg);
-      }
-    }
-  
-    .toggle-content:has(:checked) {
-      background-color: var(--shape-btn);
-      border: 2px solid var(--brand-light);
-    }
-  
-    button {
-      width: 100%;
-      max-width: 40rem; /* Reduz tamanho do botão */
-      padding: 0.8rem;
-      font-size: 1.2rem;
-      text-align: center;
-    }
-  }
+}
 
 @media (min-width: 300px) and (max-width: 500px) {
     #App {
@@ -520,11 +374,18 @@
   
         & h1 {
           font: var(--logo2);
-          font-size: 1.7rem;
+          font-size: 1.8rem;
           text-transform: uppercase;
           color: var(--text-head);
           text-align: center;
         }
+
+        & h2{
+            font: var(--body-md-semibold);
+            font-size: 1.4rem;
+            text-align: justify;
+            color: var(--text-head);
+          }
   
         & p {
           font: var(--body-sm-regular);
@@ -687,5 +548,5 @@
       font-size: 1.2rem;
       text-align: center;
     }
-  }
+}
   

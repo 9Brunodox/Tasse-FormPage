@@ -37,6 +37,14 @@ aside {
     & h1 {
       font: var(--logo2);
       color: var(--text-head);
+      text-transform: uppercase;
+    }
+
+    & h2{
+      font: var(--body-md-semibold);
+      font-size: 2rem;
+      text-align: start;
+      color: var(--text-head);
     }
 
     & p {
