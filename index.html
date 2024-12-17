@@ -64,32 +64,14 @@
 
                         <div class="flex">
                             <div class="input-wrapper flex-1">
-                                <label for="type">Mora em condomínio?</label>
-                                <div class="toggle-options flex">
-                                    <!-- Botão CondSim -->
-                                     <div id="CondSim-container" class="toggle-content">
-                                         <input type="radio" name="type" id="Sim" value="Sim" class="Sim" checked>
-                                         <div class="type-image"></div>
-                                         <label for="Sim" class="toggle-label">
-                                             Sim
-                                         </label>
-                                     </div>
-                                     <div id="CondNao-container" class="toggle-content">
-                                         <!-- Botão CondNao -->
-                                         <input type="radio" name="type" id="Nao" value="Nao" class="Nao">
-                                         <div class="type-image"></div>
-                                         <label for="Nao" class="toggle-label">
-                                             Não
-                                         </label>
-                                     </div>
-                                </div>
+                                <label for="address">Local</label>
+                                <input id="address" name="address" type="text" placeholder="Digite seu endereço"></input>
                             </div>
                             <div class="input-wrapper flex-1">
-                                <label for="address">Local</label>
-                                <input id="address" name="address" type="text" placeholder="Seu endereço"></input>
+                                <label for="nomeCond">Condomínio</label>
+                                <input id="nomeCond" name="nomeCond" type="text" placeholder="Digite o nome do seu condomínio"></input>
                             </div>
                         </div>
-
                         <div class="input-wrapper">
                             <label for="msg">Mensagem</label>
                             <textarea id="msg" name="msg" placeholder="Caso queira, escreva uma mensagem" rows="7" cols="20"></textarea>
